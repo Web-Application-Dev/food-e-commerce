@@ -12,5 +12,7 @@ namespace Universum.FoodEcommerce.Domain.Entities
         public int Quantity { get; set; }
         public int OrderStatusId { get; set; }
         public OrderStatus OrderStatus { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 }

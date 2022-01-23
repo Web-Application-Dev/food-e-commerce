@@ -11,5 +11,7 @@ namespace Universum.FoodEcommerce.Domain.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string ShortCode { get; set; }
+        public City City { get; set; }
+        public ICollection<City> Cities { get; set; }
     }
 }

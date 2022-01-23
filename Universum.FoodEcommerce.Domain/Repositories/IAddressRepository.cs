@@ -7,9 +7,9 @@ using Universum.FoodEcommerce.Domain.Entities;
 
 namespace Universum.FoodEcommerce.Domain.Repositories
 {
-    public interface IRoleRepository
+    public interface IAddressRepository
     {
-        Role GetRole(int id);
-        List<Role> GetRoles();
+        Address GetById(int id);
+        List<Address> GetAll();
     }
 }
