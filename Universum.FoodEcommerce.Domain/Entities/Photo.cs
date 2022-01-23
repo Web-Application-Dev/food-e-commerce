@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Universum.FoodEcommerce.Domain.Entities
 {
-    class Photo
+    public class Photo
     {
         public int Id { get; set; }
         public string PhotoURL { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
     }
 }

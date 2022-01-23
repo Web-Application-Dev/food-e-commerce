@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Universum.FoodEcommerce.Domain.Entities
 {
-    class Order
+    public class Order
     {
         public int Id { get; set; }
         public int Quantity { get; set; }
+        public int OrderStatusId { get; set; }
+        public OrderStatus OrderStatus { get; set; }
     }
 }

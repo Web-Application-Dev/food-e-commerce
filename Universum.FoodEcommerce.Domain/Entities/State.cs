@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Universum.FoodEcommerce.Domain.Entities
 {
-    class State
+    public class State
     {
         public int Id { get; set; }
         public string Name { get; set; }
