@@ -14,6 +14,11 @@ namespace Universum.FoodEcommerce.Domain.Entities
         public string Password { get; set; }
         public int RoleId { get; set; }
         public Role Role { get; set; }
+        public int GenderId { get; set; }
+        public Gender Gender { get; set; }
+        public int AddressId { get; set; }
+        public Address Address { get; set; }
+        public ICollection<Order> Orders{ get; set; }
 
     }
 }
