@@ -24,7 +24,7 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
 
             Relationships(builder);
 
-            builder.ToTable("City");
+            builder.ToTable("Cities");
         }
 
         private void Relationships(EntityTypeBuilder<City> builder)

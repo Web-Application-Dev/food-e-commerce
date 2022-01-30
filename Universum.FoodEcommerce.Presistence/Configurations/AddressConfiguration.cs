@@ -25,7 +25,7 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
 
             Relationships(builder);
 
-            builder.ToTable("Address");
+            builder.ToTable("Addresses");
         }
 
         private void Relationships(EntityTypeBuilder<Address> builder)

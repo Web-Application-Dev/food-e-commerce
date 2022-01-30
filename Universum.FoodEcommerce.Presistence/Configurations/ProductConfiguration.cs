@@ -26,13 +26,20 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
             builder.Property(product => product.Price)
                 .IsRequired();
 
-            builder.Property(product => product.Photo)
+            builder.Property(product => product.PhotoId)
                 .IsRequired();
 
-
+            Relationships(builder);
 
             builder.ToTable("Products");
         }
 
+        private void Relationships(EntityTypeBuilder<Product> builder)
+        {
+            builder.HasOne(x=>x.Photo)
+                .WithOne(x => x.Product)
+                .HasForeignKey<Product>(x=>x.PhotoId)
+                .OnDelete(DeleteBehavior.NoAction);
+        }
     }
 }

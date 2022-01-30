@@ -9,7 +9,7 @@ using Universum.FoodEcommerce.Domain.Repositories;
 
 namespace Universum.FoodEcommerce.Presistence.Repositories
 {
-    public class ProductRepository : IProductrepository
+    public class ProductRepository : IProductRepository
     {
         private readonly ApplicationDbContext _context;
         ILogger<PhotoRepository> _logger;

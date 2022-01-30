@@ -16,13 +16,8 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
             builder.HasKey(orderStatus => orderStatus.Id);
 
             builder.Property(orderStatus => orderStatus.Id);
-
-            builder.Property(orderStatus => orderStatus.Orders)
-                .IsRequired();
-
-
-
-            builder.ToTable("OrderStatus");
+            builder.Property(orderStatus => orderStatus.Name);
+            builder.ToTable("OrderStatuses");
         }
 
        
