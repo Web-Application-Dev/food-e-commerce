@@ -20,7 +20,7 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
             builder.Property(role => role.Name)
                 .IsRequired();
 
-            builder.ToTable("Role");
+            builder.ToTable("Roles");
         }
     }
 }

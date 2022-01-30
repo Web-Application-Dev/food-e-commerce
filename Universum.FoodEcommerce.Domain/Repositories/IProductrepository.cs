@@ -7,7 +7,7 @@ using Universum.FoodEcommerce.Domain.Entities;
 
 namespace Universum.FoodEcommerce.Domain.Repositories
 {
-    public interface IProductrepository
+    public interface IProductRepository
     {
         bool Register(Product product);
         bool Update(Product product);

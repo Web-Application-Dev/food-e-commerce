@@ -20,14 +20,11 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
             builder.Property(order => order.Quantity)
                 .IsRequired();
 
-            builder.Property(order => order.OrderStatusId)
-                .IsRequired();
-
-            
+            builder.Property(order => order.OrderStatusId);
 
             Relationships(builder);
 
-            builder.ToTable("Address");
+            builder.ToTable("Orders");
         }
 
         private void Relationships(EntityTypeBuilder<Order> builder)

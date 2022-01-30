@@ -12,6 +12,7 @@ namespace Universum.FoodEcommerce.Domain.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public int Price { get; set; }
+        public int PhotoId { get; set; }
         public Photo Photo { get; set; }
         public ProductType ProductType { get; set; }
     }

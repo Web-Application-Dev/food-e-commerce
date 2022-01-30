@@ -1,4 +1,4 @@
-﻿using Application.Interfaces;
+﻿using Universum.FoodEcommerce.Application.Interfaces;
 using Universum.FoodEcommerce.Domain.Entities;
 using MediatR;
 using System;

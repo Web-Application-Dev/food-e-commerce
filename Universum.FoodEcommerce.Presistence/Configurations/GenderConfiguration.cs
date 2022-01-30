@@ -20,7 +20,7 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
             builder.Property(gender => gender.Name)
                 .IsRequired();
 
-            builder.ToTable("Gender");
+            builder.ToTable("Genders");
         }
 
     }

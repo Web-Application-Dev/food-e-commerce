@@ -23,7 +23,7 @@ namespace Universum.FoodEcommerce.Presistence.Configurations
             builder.Property(state => state.ShortCode)
                     .IsRequired();
 
-            builder.ToTable("State");
+            builder.ToTable("States");
         }
     }
 }
